@@ -1,0 +1,82 @@
+ 
+# EditorConfig is awesome: https://EditorConfig.org
+
+# -------------------------------------------------------------------------------------------------
+# Default configuration
+# -------------------------------------------------------------------------------------------------
+# top-most EditorConfig file
+root = true
+
+# Default for all files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# -------------------------------------------------------------------------------------------------
+# myDevPod Intranet
+# -------------------------------------------------------------------------------------------------
+# Intranet CSS
+[.mydevpod/www/htdocs/assets/css/*.css]
+indent_style = tab
+indent_size = 4
+
+# Intranet config
+[.mydevpod/www/config.php]
+indent_style = tab
+indent_size = 4
+
+# Intranet libs
+[.mydevpod/www/include/lib/**.php]
+indent_style = tab
+indent_size = 4
+
+# Intranet pages
+[.mydevpod/www/htdocs/*.php]
+indent_style = tab
+indent_size = 4
+
+# -------------------------------------------------------------------------------------------------
+# myDevPod Git Repository
+# -------------------------------------------------------------------------------------------------
+[.travis.yml]
+indent_style = space
+indent_size = 2
+
+[.tests/**.{php,sh}]
+indent_style = tab
+indent_size = 4
+
+[Makefile]
+indent_style = tab
+indent_size = 4
+
+# -------------------------------------------------------------------------------------------------
+# myDevPod Configuration and Scripts
+# -------------------------------------------------------------------------------------------------
+[{docker-compose.yml,docker-compose-override.yml,docker-compose-override.yml-example}]
+indent_style = space
+indent_size = 2
+
+[compose/docker-compose.override.yml-*]
+indent_style = space
+indent_size = 2
+
+[cfg/vhost-gen/*.yml-*]
+indent_style = space
+indent_size = 2
+
+[{nginx.yml,apache22.yml,apache24.yml}]
+indent_style = space
+indent_size = 2
+
+[{shell.sh,update-docker.sh}]
+indent_style = tab
+indent_size = 4
+
+[shell.bat]
+end_of_line = crlf
+indent_style = tab
+indent_size = 4
+

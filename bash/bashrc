@@ -1,0 +1,11 @@
+# Bashrc folder
+#
+# 1. This folder will be mounted to /etc/bashrc-mydevpod.d
+# 2. All files ending by *.sh will be sourced by bash automatically
+#    for the mydevpod and root user.
+#
+
+
+# Add your custom vimrc or nanorc to load it automatically.
+# Also make sure you add nanorc to this folder.
+alias nano='nano -c /etc/mydevpod.d/nanorc'
