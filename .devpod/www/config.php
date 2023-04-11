@@ -78,17 +78,17 @@ function loadClass($class) {
 			//
 			case 'Logger':
 				loadFile($class, $lib_dir);
-				$_LOADED_LIBS[$class] = \mydevpod\Logger::getInstance();
+				$_LOADED_LIBS[$class] = \devpod\Logger::getInstance();
 				break;
 
 			case 'Html':
 				loadFile($class, $lib_dir);
-				$_LOADED_LIBS[$class] = \mydevpod\Html::getInstance();
+				$_LOADED_LIBS[$class] = \devpod\Html::getInstance();
 				break;
 
 			case 'Helper':
 				loadFile($class, $lib_dir);
-				$_LOADED_LIBS[$class] = \mydevpod\Helper::getInstance();
+				$_LOADED_LIBS[$class] = \devpod\Helper::getInstance();
 				break;
 
 			//
@@ -96,22 +96,22 @@ function loadClass($class) {
 			//
 			case 'Php':
 				loadFile($class, $cnt_dir);
-				$_LOADED_LIBS[$class] = \mydevpod\Php::getInstance($GLOBALS['PHP_HOST_NAME']);
+				$_LOADED_LIBS[$class] = \devpod\Php::getInstance($GLOBALS['PHP_HOST_NAME']);
 				break;
 
 			case 'Dns':
 				loadFile($class, $cnt_dir);
-				$_LOADED_LIBS[$class] = \mydevpod\Dns::getInstance($GLOBALS['DNS_HOST_NAME']);
+				$_LOADED_LIBS[$class] = \devpod\Dns::getInstance($GLOBALS['DNS_HOST_NAME']);
 				break;
 
 			case 'Httpd':
 				loadFile($class, $cnt_dir);
-				$_LOADED_LIBS[$class] = \mydevpod\Httpd::getInstance($GLOBALS['HTTPD_HOST_NAME']);
+				$_LOADED_LIBS[$class] = \devpod\Httpd::getInstance($GLOBALS['HTTPD_HOST_NAME']);
 				break;
 
 			case 'Mysql':
 				loadFile($class, $cnt_dir);
-				$_LOADED_LIBS[$class] = \mydevpod\Mysql::getInstance($GLOBALS['MYSQL_HOST_NAME'], array(
+				$_LOADED_LIBS[$class] = \devpod\Mysql::getInstance($GLOBALS['MYSQL_HOST_NAME'], array(
 					'user' => 'root',
 					'pass' => loadClass('Helper')->getEnv('MYSQL_ROOT_PASSWORD')
 				));
@@ -119,7 +119,7 @@ function loadClass($class) {
 
 			case 'Pgsql':
 				loadFile($class, $cnt_dir);
-				$_LOADED_LIBS[$class] = \mydevpod\Pgsql::getInstance($GLOBALS['PGSQL_HOST_NAME'], array(
+				$_LOADED_LIBS[$class] = \devpod\Pgsql::getInstance($GLOBALS['PGSQL_HOST_NAME'], array(
 					'user' => loadClass('Helper')->getEnv('PGSQL_ROOT_USER'),
 					'pass' => loadClass('Helper')->getEnv('PGSQL_ROOT_PASSWORD'),
 					'db' => 'postgres'

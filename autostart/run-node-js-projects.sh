@@ -3,7 +3,7 @@
 # This is a generic example to startup your NodeJS projects with
 # pm2 (https://github.com/Unitech/pm2)
 #
-#  This will be executed by the user account "mydevpod"
+#  This will be executed by the user account "devpod"
 #
 
 
@@ -40,6 +40,6 @@ for item in ${NODE_PROJECTS[*]}; do
 		continue;
 	fi
 
-	echo "su -c \"cd ${NODE_PATH}; pm2 start ${NODE_FILE}\" -l mydevpod"
-	su -c "cd ${NODE_PATH}; pm2 start ${NODE_FILE}" -l mydevpod
+	echo "su -c \"cd ${NODE_PATH}; pm2 start ${NODE_FILE}\" -l devpod"
+	su -c "cd ${NODE_PATH}; pm2 start ${NODE_FILE}" -l devpod
 done

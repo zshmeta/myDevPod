@@ -18,22 +18,22 @@ trim_trailing_whitespace = true
 # myDevPod Intranet
 # -------------------------------------------------------------------------------------------------
 # Intranet CSS
-[.mydevpod/www/htdocs/assets/css/*.css]
+[.devpod/www/htdocs/assets/css/*.css]
 indent_style = tab
 indent_size = 4
 
 # Intranet config
-[.mydevpod/www/config.php]
+[.devpod/www/config.php]
 indent_style = tab
 indent_size = 4
 
 # Intranet libs
-[.mydevpod/www/include/lib/**.php]
+[.devpod/www/include/lib/**.php]
 indent_style = tab
 indent_size = 4
 
 # Intranet pages
-[.mydevpod/www/htdocs/*.php]
+[.devpod/www/htdocs/*.php]
 indent_style = tab
 indent_size = 4
 

@@ -334,7 +334,7 @@ HOST_PATH_BACKUPDIR=./backups
 
 ###
 ### The path on your host OS of the ssh directory to be mounted into the
-### PHP container into /home/mydevpod/.ssh.
+### PHP container into /home/devpod/.ssh.
 ###
 
 HOST_PATH_SSH_DIR=~/.ssh
@@ -453,7 +453,7 @@ HTTPD_DOCROOT_DIR=htdocs
 ### When changing this value, restart the myDevpod
 ###
 
-HTTPD_TEMPLATE_DIR=.mydevpod
+HTTPD_TEMPLATE_DIR=.devpod
 
 
 ###
@@ -492,7 +492,7 @@ HTTPD_NGINX_WORKER_CONNECTIONS=1024
 ###
 ###
 
-MYSQL_ROOT_PASSWORD=mydevpod
+MYSQL_ROOT_PASSWORD=devpod
 
 
 ###
@@ -513,7 +513,7 @@ HOST_PORT_MYSQL=3306
 ### PostgreSQL 'root' user name (usually postgres)
 ###
 
-PGSQL_ROOT_USER=mydevpod
+PGSQL_ROOT_USER=devpod
 
 
 ###
